@@ -1,0 +1,52 @@
+.judul {
+    text-align: center;
+}
+
+div h2 {
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+
+}
+
+div {
+    background-color: gray;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-image: linear-gradient(95deg,rgb(48, 126, 45),rgba(238, 255, 0, 0.753));
+}
+
+.warna1 {
+    background-color: gray;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-image: linear-gradient(to left,rgb(7, 74, 218),rgba(255, 136, 0, 1));
+}
+.warna2 {
+    background-color: gray;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-image: linear-gradient(to right,rgb(247, 2, 206),rgba(255, 136, 0, 1));
+}
+.warna3 {
+    background-color: gray;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-image: linear-gradient(to left,rgb(7, 74, 218),rgb(9, 255, 0));
+}

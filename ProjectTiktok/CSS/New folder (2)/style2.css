@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.relative {
+    position: relative;
+    top: 0px;
+}
+
+.fixed {
+    position: fixed;
+    top: 400px;
+}
+.container-absolute{
+    width: 800px;
+    height: 800px;
+    background-image: linear-gradient(white,red);
+}
+.absolute {
+    position: absolute;
+    top: 200px;
+    color: blue;
+}
+.sticky {
+    position: sticky;
+    top: 0px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px Solid Black;
+    padding: 4px 8px;
+}
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 50%;
+    
+}
+.img {
+    display: flex;
+    justify-content: center;
+}

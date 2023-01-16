@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0px 25vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: yellow;
+    border-radius: 50%;
+    
+}
+
+.image img {
+    border-radius: 50%;
+    border: 3px solid transparent;
+    outline: 10px solid ;
+    
+}
+
+.ferrari::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+
+    
+}

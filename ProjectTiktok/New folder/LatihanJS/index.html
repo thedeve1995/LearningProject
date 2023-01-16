@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan Javascript</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <p class="demo" id="demo"></p>
+    <p class="demo" id="demo1"></p>
+    <p class="demo" id="demo2"></p>
+    <p class="demo" id="demo3"></p>
+    <p class="demo" id="demo4"></p>
+    <p class="demo" id="demo5"></p>
+   
+    <script>
+        let keluarga =["Dani","Wenny","Jihan","Rizhan"];
+        keluarga[4]="Kahfi";
+        document.getElementById('demo').innerHTML=keluarga+", 45";
+
+        let dani = {umur:"27",sex:"Pria",pekerjaan:"Staf Sekolah"};
+        let panjang = keluarga.sort();
+        document.getElementById('demo1').innerHTML=panjang;
+
+        let kLen= keluarga.length;
+
+        let text= "<ul>";
+            for (let x= 0; x < kLen ;x++){
+                text += "<li>"+ keluarga[x] + "</li>";
+            }
+            text += "</ul>";
+        
+        document.getElementById('demo3').innerHTML= text;
+
+        let klg = keluarga[keluarga.length - 1];
+        document.getElementById('demo4').innerHTML=klg;
+
+        let tag= "<ul>";
+            keluarga.forEach(myFunction);
+            tag += "</ul>";
+
+            document.getElementById('demo5').innerHTML= tag;
+
+            function myFunction(dani){
+                tag+="<li>"+dani + "</li>";
+            }
+
+    </script>
+</body>
+</html>

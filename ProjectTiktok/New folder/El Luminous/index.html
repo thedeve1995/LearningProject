@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HanHan Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fw/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav"> 
+        <div class="navbar">
+            <h1>HanHan Store</h1>
+        </div> 
+        <ul>
+            <li><a href="#" onclick="color(1)">Merah</a></li>
+            <li><a href="#" onclick="color(2)">Biru</a></li>
+            <li><a href="#" onclick="color(3)">Hitam</a></li>
+            <li><a href="#" onclick="color(4)">Hijau</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="tagline">
+            <h1>SKMEI <br> EL LUMINOUS</h1>
+            <p>Sporty and Trendy</p>
+            <Button id="tombol"><a href="biru2.jpg" target="_blank">Beli Sekarang</a></Button>
+        </div>
+        
+        <img id="gambar" src="merah1.jpg">
+        
+    </div>
+    <br>
+    <div class="testimonial">
+        <div class="container2">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <br>
+                    <h1 style="text-align:center;margin-bottom: 20px;">Customer's Testimonial</h1>
+                    <div class="user-text">
+                        <p>"Thank you for making it painless, pleasant and most of all hassle free! Dude, your stuff is the bomb! We were treated like royalty. I'd be lost without This Website Developer."</p>
+                        <span>Wanda, Madrid</span>
+                    </div>
+                    <div class="user-text active-text">
+                        <p>"This Website Developer saved my business. I will refer everyone I know."</p>
+                        <span>Sudar, india</span>
+                    </div>
+                    <div class="user-text ">
+                        <p>"Definitely worth the investment. I wish I would have thought of it first. Thanks for the great service."</p>
+                        <span>Marcel, england</span>
+                    </div>
+                    <div class="user-text">
+                        <p>"I love the system. This Website Developer has really helped our business. I will recommend you to my colleagues."</p>
+                        <span>Juan Mata, Valencia</span>
+                    </div>
+                    <div class="user-text">
+                        <p>"You've saved our business! It fits our needs perfectly. Wow what great service, I love it!"</p>
+                        <span>Bambang, Indonesia</span>
+                    </div>
+                </div>
+                <div class="textimonial-pic">
+                    <img src="fw/pic1.png" class="user-pic" onclick="showReview()">
+                    <img src="fw/pic2.png" class="user-pic active-pic" onclick="showReview()">
+                    <img src="fw/pic3.png" class="user-pic" onclick="showReview()">
+                    <img src="fw/pic4.png" class="user-pic" onclick="showReview()">
+                    <img src="fw/pic5.png" class="user-pic" onclick="showReview()">
+                </div>
+            </div>
+         </div>
+    
+         <script>
+    
+            let userTexts = document.getElementsByClassName("user-text");
+            let userPics = document.getElementsByClassName("user-pic")
+    
+    
+            function showReview() {
+                for (userPic of userPics) {
+                    userPic.classList.remove("active-pic");
+                }
+                for (userText of userTexts ) {
+                    userText.classList.remove ("active-text")
+                }
+                let i = Array.from(userPics).indexOf(event.target);
+    
+                userPics[i].classList.add("active-pic");
+                userTexts[i].classList.add("active-text");
+            }
+         </script>
+    </div>
+    <div class="sectionmdl">
+        <div class="gambar">
+            <img src="hitam3.jpg" width="350px" height="350px">
+            <img src="biru3.jpg" width="350px" height="350px">
+            <img src="merah2.jpg" width="350px" height="350px">
+            <img src="biru2.jpg" width="350px" height="350px">
+            <img src="hitam2.jpg" width="350px" height="350px">
+            <img src="hijau3.jpg" width="350px" height="350px">
+        </div>
+        
+    </div>
+    <br><br>
+    <div class="section2">
+        <div class="tagline">
+            <div class="h1">
+                <h1 id="warnah1">WARNA  WARNA <br>PILIHAN</h1>
+            </div>
+            <div class="divcolor">
+                <button style="background-color: rgb(255, 36, 36);" onclick="red()"></button>
+                <button style="background-color: rgb(0, 195, 255);" onclick="blue()"></button>
+                <button style="background-color: black;" onclick="black()"></button>
+                <button style="background-color: rgb(1, 97, 1);" onclick="green()"></button>
+            </div>
+            <div class="layoutwarna">
+                <div id="carda" class="carda" onmouseenter="myFunction(1)" onmouseleave="reTurn()">
+                    <div class="card1">
+                        <img src="merah1.jpg" >
+                    </div>
+                    <div class="cardbtn">
+                        <button>Beli</button>
+                    </div>  
+                </div>
+                <div id="cardb" class="cardb" onmouseenter="myFunction(2)" onmouseleave="reTurn()">
+                    <div class="card1">
+                        <img src="biru1.jpg" >
+                    </div>
+                    <div class="cardbtn">
+                        <button>Beli</button>
+                    </div>  
+                </div>
+                <div id="cardc" class="cardc" onmouseenter="myFunction(3)" onmouseleave="reTurn()">
+                    <div class="card1">
+                        <img src="hitam1.jpg" >
+                    </div>
+                    <div class="cardbtn">
+                        <button>Beli</button>
+                    </div>  
+                </div>
+                <div id="cardd" class="cardd" onmouseenter="myFunction(4)" onmouseleave="reTurn()">
+                    <div class="card1">
+                        <img src="hijau1.jpg" >
+                    </div>
+                    <div class="cardbtn">
+                        <button>Beli</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+
+        function color(n) {
+            let gambar = document.getElementById('gambar');
+            let color = document.getElementById('tombol');
+            let nav = document.getElementById('nav');
+
+            var foto;
+                if (n == 1) {
+                    foto = "merah1.jpg"
+                }
+                if (n == 2) {
+                    foto = "biru1.jpg"
+                }
+                if (n == 3) {
+                    foto = "hitam1.jpg"
+                }
+                if (n == 4) {
+                    foto = "hijau1.jpg"
+                };
+            var warna;
+            if (n == 1) {
+                    warna = "rgb(255, 36, 36)"
+                }
+                if (n == 2) {
+                    warna = "rgb(0, 195, 255)"
+                }
+                if (n == 3) {
+                    warna = "black"
+                }
+                if (n == 4) {
+                    warna = "rgb(1, 97, 1)"
+                };
+
+            color.style.backgroundColor = warna
+            nav.style.backgroundColor = warna
+            gambar.src= foto;
+            
+        }
+
+        function myFunction(n) {
+            var text;
+            if (n == 1) {
+                text = "rgb(255, 36, 36)"
+            }
+            if (n == 2) {
+                text = "rgb(0, 195, 255)"
+            }
+            if (n == 3) {
+                text = "Black"
+            }
+            if (n == 4) {
+                text = "rgb(1, 97, 1)"
+            }
+        
+        document.getElementById('warnah1').style.color = text;
+        }
+
+        function reTurn() {
+            document.getElementById('warnah1').style.color = "black"
+        }
+
+        function red() {
+            var red = document.getElementById('carda');
+            var blue = document.getElementById('cardb');
+            var black = document.getElementById('cardc');
+            var green = document.getElementById('cardd');
+
+            red.style.display = "block"
+            blue.style.display = "none"
+            black.style.display = "none"
+            green.style.display = "none"
+            
+        }
+        function blue() {
+            var red = document.getElementById('carda');
+            var blue = document.getElementById('cardb');
+            var black = document.getElementById('cardc');
+            var green = document.getElementById('cardd');
+
+            red.style.display = "none"
+            blue.style.display = "block"
+            black.style.display = "none"
+            green.style.display = "none"
+            
+        }
+        function black() {
+            var red = document.getElementById('carda');
+            var blue = document.getElementById('cardb');
+            var black = document.getElementById('cardc');
+            var green = document.getElementById('cardd');
+
+            red.style.display = "none"
+            blue.style.display = "none"
+            black.style.display = "block"
+            green.style.display = "none"
+            
+        }
+        function green() {
+            var red = document.getElementById('carda');
+            var blue = document.getElementById('cardb');
+            var black = document.getElementById('cardc');
+            var green = document.getElementById('cardd');
+
+            red.style.display = "none"
+            blue.style.display = "none"
+            black.style.display = "none"
+            green.style.display = "block"
+            
+        }
+        
+    </script>
+</body>
+</html>

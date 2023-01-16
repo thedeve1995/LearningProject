@@ -1,0 +1,8 @@
+print("Silahkan isi namamu")
+nama= input()
+print(f"hai {nama}, Aku sangat Mencintaimu")
+print(f"apa makanan kesukaanmu, {nama}?")
+makanan=input()
+print(f"{makanan}, ya ? apakah enak ?")
+jawaban=input()
+print(f"baiklah, kamu menjawab {jawaban}, berarti aku akan memintamu membuatkannnya untukku besok, ok?")

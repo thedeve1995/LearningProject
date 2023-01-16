@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation With CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="con" class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" width="100px">
+                <p>DBX 2022</p>
+            </div>
+            <ul>
+                <li><a href="#" onclick="image1()">1</a></li>
+                <li><a href="#" onclick="image2()">2</a></li>
+                <li><a href="#" onclick="image3()">3</a></li>
+                <li><a href="#" onclick="image4()">4</a></li>
+                <li><a href="#" onclick="image5()">5</a></li>
+                <li><a href="#" onclick="image6()">6</a></li>
+                <li><a href="#" onclick="image7()">7</a></li>
+                <li><a href="#" onclick="image8()">8</a></li>
+                <li><a href="#" onclick="image9()">9</a></li>
+                <li><a href="#" onclick="image10()">10</a></li>
+            </ul>
+        </nav>
+        <div id="nest" class="nestcontent">
+            <div class="content">
+                <h1 class="slide-left">HIGH AND <br> MIGHTY</h1>
+                <p class="slide-left">ASTON MARTIN'S DBX MUST NOT ONLY BRING NEW CUSTOMERS TO THE VENERABLE BRITISH BRAND BUT ALSO ENSURE ITS LONG-TERM SURVIVAL</p>
+                <button class="slide-left"> Reserve Now !</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function image1() {
+            document.getElementById('con').style.backgroundImage="url(1.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image2() {
+            document.getElementById('con').style.backgroundImage="url(2.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image3() {
+            document.getElementById('con').style.backgroundImage="url(3.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image4() {
+            document.getElementById('con').style.backgroundImage="url(4.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image5() {
+            document.getElementById('con').style.backgroundImage="url(5.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image6() {
+            document.getElementById('con').style.backgroundImage="url(6.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image7() {
+            document.getElementById('con').style.backgroundImage="url(7.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image8() {
+            document.getElementById('con').style.backgroundImage="url(8.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image9() {
+            document.getElementById('con').style.backgroundImage="url(9.jpg)";
+            document.getElementById('nest').style.justifyContent="left";
+        }
+        function image10() {
+            document.getElementById('con').style.backgroundImage="url(10.jpg)";
+            document.getElementById('nest').style.justifyContent="right";
+            
+        }
+        
+    </script>
+</body>
+</html>

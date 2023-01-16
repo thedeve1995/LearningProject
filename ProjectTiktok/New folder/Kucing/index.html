@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="gambar" src="cat1.jpg" alt="">
+    </div>
+    <br> 
+    <div class="button">
+        <button onclick="cat1()">Kucing 1</button>
+        <button onclick="cat2()">Kucing 2</button>
+        <button onclick="cat3()">Kucing 3</button>
+    </div>
+
+    <script>
+        function cat1() {
+            document.getElementById('gambar').src="cat1.jpg"
+        }
+
+        function cat2() {
+            document.getElementById('gambar').src="cat2.jpg"
+        }
+
+        function cat3() {
+            document.getElementById('gambar').src="cat3.jpg"
+        }
+    </script>
+</body>
+</html>

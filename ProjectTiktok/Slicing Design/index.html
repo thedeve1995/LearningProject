@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca8f9ed808.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="body1">
+        <div class="containernav">
+            <nav>
+                <div class="logo">
+                    <a href="#">DANI .<span>S</span>.</a>
+                </div>
+                <div class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Works</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Service</a>
+                </div>
+                <div class="navbutton">
+                    <button>Let's Chat</button>
+                </div>
+                <div class="burgermenu">
+                    <a id="burger" href="#" onclick="myfunction()"><i class="fa-solid fa-bars"></i></a>
+                    <a id="close" href="#" onclick="dani()"><i class="fa-solid fa-x"></i></i></a>
+                </div>
+            </nav>
+            <div class="floatingmenu">
+                <div class="navbar2" id="float">
+                    <a href="#">Home</a>
+                    <a href="#">Works</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Service</a>
+                </div>
+                <div class="navbutton2" id="buttonalign" >
+                    <button id="button">Let's Chat</button>
+                </div>
+            </div>
+        </div>     
+        <div class="hero">
+            
+            <div class="tagline">
+                <h1>HI, I Am <span>WEBDEV</span><br>Dani Sepriyanto</h1>
+                <p>Already Learn About Web Developing <br>For Less Than 1 Months</p>
+                <div class="button">
+                    <button>Hire Me</button>
+                    <button>Project</button>
+                </div>
+            </div>
+            <div class="heroimg">
+                <img src="icon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="projectstatistic">
+        <h2 class="ps">Project <br>Statistic 2022</h2>
+        <div class="jumlah">
+            <div class="website">
+                <h2>Website Design</h2>
+                <h2>10</h2>
+            </div>
+            <div class="website">
+                <h2>Mobile App Design</h2>
+                <h2>4</h2>
+            </div>
+            <div class="website">
+                <h2>Brand Identity</h2>
+                <h2>2</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfunction() {
+            document.getElementById("float").style.display="grid";
+            document.getElementById("button").style.display="flex";
+            document.getElementById("buttonalign").style.display="flex";
+            document.getElementById("close").style.display="block";
+            document.getElementById("burger").style.display="none";
+
+            
+            
+            
+        }
+        function dani() {
+            document.getElementById("float").style.display="none";
+            document.getElementById("button").style.display="none";
+            document.getElementById("buttonalign").style.display="none";
+            document.getElementById("close").style.display="none";
+            document.getElementById("burger").style.display="block";
+            
+        }
+        
+    </script>
+</body>
+</html>

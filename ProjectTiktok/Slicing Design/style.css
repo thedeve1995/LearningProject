@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body1 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.containernav{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #f0f0f0);
+    
+    box-shadow:  20px 20px 100px #bebebe,
+                -20px -20px 100px #ffffff;
+    padding: 10px 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    
+}
+
+.navbar2{
+    display: none;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    
+}
+
+nav .burgermenu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+.navbar a{
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    padding: 10px 20px;
+}
+.navbar a:hover {
+    border-bottom: 1px solid rgb(41, 40, 40);
+}
+.navbar a:active {
+    border-bottom: 3px solid rgb(41, 40, 40);
+}
+
+.navbar2 a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    padding: 10px 20px;
+}
+.navbar2 a:hover {
+    border-bottom: 1px solid rgb(41, 40, 40);
+}
+.navbar2 a:active {
+    border-bottom: 3px solid rgb(41, 40, 40);
+}
+
+.logo a {
+    font-size: 2em;
+    font-weight: 600;
+    color: black;
+}
+.logo a span {
+    color: rgb(255, 102, 0);
+}
+
+.navbutton button {
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 102, 0, 0.5);
+    cursor: pointer;
+    background: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbutton2 button{
+    display: none;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 102, 0, 0.5);
+    cursor: pointer;
+    background: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbutton2 {
+    justify-content: center;
+}
+
+.navbutton button:hover {
+    border: 1px solid rgba(255, 102, 0, 1);
+}
+.navbutton button:active {
+    background:rgba(255, 102, 0, 1);
+}
+
+.navbutton2 button:hover {
+    border: 1px solid rgba(255, 102, 0, 1);
+}
+.navbutton2 button:active {
+    background:rgba(255, 102, 0, 1);
+}
+
+.hero {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.heroimg img {
+    height: 65vh; 
+}
+
+.tagline {
+    z-index: 1;
+}
+
+.tagline h1 {
+    font-size: 2em;
+    margin-top: -20px;
+}
+
+.tagline h1 span {
+    background: rgba(255, 102, 0, 1);
+    padding: 5px 40px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.tagline p {
+    font-size: 1.5em;
+    margin-top: -20px;
+}
+
+.button button{
+    padding: 10px 30px;
+    border: 1px solid rgba(255, 102, 0, 0.5);
+    cursor: pointer;
+    background: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.button button:hover {
+    border: 1px solid rgba(255, 102, 0, 1);
+}
+.button button:active {
+    background:rgba(255, 102, 0, 1);
+}
+
+.projectstatistic {
+    background: rgb(43, 33, 27);
+    height: auto;
+    margin-left: 0px;
+    margin-top: 30px;
+    color: rgb(253, 253, 253);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.projectstatistic .ps {
+    margin-right: 100px;
+    
+}
+.website {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(240, 248, 255, 0.767);
+    font-size: smaller;
+    
+}
+.website h2 {
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width:1000px){
+    
+    .hero {
+        display: contents;
+    }
+    .tagline h1 {
+        text-align: center;
+        font-size: em;
+        margin-top: 50px;
+    }
+    .tagline p{
+        text-align: center;
+        font-size: em;
+    }
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+ 
+    nav .burgermenu {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    #close {
+        display: none;
+    }
+
+    .navbutton button {
+        display: none;
+    }
+
+    .logo {
+        justify-content: space-around;
+        text-align: center;
+    }
+    .navbar {
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .navbar a{
+        display: none;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+  
+    .button{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .tagline h1 {
+        text-align: center;
+        font-size: em;
+    }
+    .heroimg {
+        display: flex;
+        justify-content: center;
+    }
+    .heroimg img {
+        margin-top: 20px;
+    }
+    .projectstatistic .ps {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .website {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(240, 248, 255, 0.767);
+        font-size: smaller;
+        align-items: center;    
+    }
+    .projectstatistic {
+        height: 35vh;
+    }
+}

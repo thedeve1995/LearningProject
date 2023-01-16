@@ -1,0 +1,46 @@
+body {
+    counter-reset: section;
+}
+
+li::before {
+    counter-increment: section;
+    content:"Nama "
+    counter(section) ": ";
+}
+
+p::before {
+    counter-increment: section;
+    content: "Paragraf "
+    counter(section) ": ";
+}
+
+
+#first-line::first-line {
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px yellow;
+}
+#first-letter::first-letter {
+    font-size: 30px;
+    color: brown;
+    font-family: georgia;
+    text-transform: capitalize;
+}
+
+#first-letter::before{
+    content: "Dani Sepriyanto";
+}
+
+#first-letter::after{
+    content: "Dani Sepriyanto";
+}
+
+::marker {
+    color: crimson;
+    font-size: larger;
+}
+
+::selection{
+    color: white;
+    background: black;
+    border-radius: 10px;
+}

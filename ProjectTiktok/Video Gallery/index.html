@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <h1>Video Gallery</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="feature-img" onclick="playVideo(4)">
+                        <img src="img1.png" width="100%">
+                        <img src="play.png" width="60px" class="play-btn">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="small-img-row" onclick="playVideo(1)">
+                        <div class="small-img">
+                            <img src="img2.png">
+                            <img src="play.png" width="60px" class="play-btn">
+                        </div>                       
+                        <p>Lorem ipsum dolor sit amet consectetur . <br> Tempora optio mollitia</p>
+                    </div>
+                    <div class="small-img-row" onclick="playVideo(2)">
+                        <div class="small-img">
+                            <img src="img3.png">
+                            <img src="play.png" width="60px" class="play-btn">
+                        </div>                       
+                        <p>Lorem ipsum dolor sit amet consectetur . <br> Tempora optio mollitia</p>
+                    </div>
+                    <div class="small-img-row"
+                    onclick="playVideo(3)">
+                        <div class="small-img">
+                            <img src="img4.png">
+                            <img src="play.png" width="60px" class="play-btn">
+                        </div>                       
+                        <p>Lorem ipsum dolor sit amet consectetur . <br> Tempora optio mollitia</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <img src="close.jpg" class="close-btn" onclick="stopVideo()">
+        </div>
+    </div>
+    
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display="none";
+            myVideo.pause();
+        }
+
+        function playVideo(){
+            videoPlayer.style.display="block";
+        }
+
+        let videoSource;
+
+        function playVideo(n) {
+            if (n==1) {
+                videoSource = "bunt.mp4"
+            } 
+            if (n==2) {
+                videoSource = "video3.mp4"
+            } 
+            if (n==3) {
+                videoSource = "video4.mp4"
+            } 
+            if (n==4) {
+                videoSource = "video.mp4"
+            } 
+            
+            document.getElementById("myVideo").src= videoSource;
+            videoPlayer.style.display="block";
+        }
+    </script>
+</body>
+</html> 

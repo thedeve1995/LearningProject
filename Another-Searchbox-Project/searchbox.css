@@ -1,0 +1,52 @@
+body {
+    width: 90%;
+    min-height: 78vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(5,5,5,1),rgba(255, 255, 255, 0.5)),url(properties/bgimage.jpg);
+}
+.image img{
+    height: 20vw;
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 33vw;
+}
+.search {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+button {
+    margin-top: px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding-top: 3px;
+    outline: none;
+    border: none;
+}
+.box{
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 40vw;
+    margin: 0 auto;
+}
+input {
+    margin-left: 15px;
+    width: 30vw;
+    height: 40px;
+    padding-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+::placeholder {
+    font-size: 20px;
+    margin-left: 10px;
+}

@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wadah {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kotak {
+    flex: 45%;
+    height: 500px;
+    background-color: rgba(241, 60, 90, 0);
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow:inset 0 0 10px black;
+  
+}
+
+@media (max-width:800px){
+    .kotak {
+        flex: 50%;
+        background-color: red;
+    }
+}

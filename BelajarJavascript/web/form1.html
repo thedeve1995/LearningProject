@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Pada HTML</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="padding:20px">
+        <form action="action_page.php">
+            <label for="fname">Front Name</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <input type="submit" value="submit"> 
+        </form>
+        <br>
+        <br>
+        <form action="action_page.php">
+            <label for="Makanan-Kesukaan">Pilih Makanan Kesukaanmu :</label>
+            <select name="makanan-kesukaan" id="makanan" size="4" multiple>
+                <option value="bakso">Bakso</option>
+                <option value="Mie-Ayam">Mie Ayam</option>
+                <option value="Ketoprak">Ketoprak</option>
+                <option value="Ayam-Bakar" selected>Ayam Bakar</option>
+                <option value="Roti-Bakar">Roti Bakar</option>
+                <option value="Ayam-Geprek">Ayam Geprek</option>
+                <option value="Mie-Goreng">Mie Goreng</option>
+            </select>
+            
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <br>
+
+        <form action="action_page.php">
+            <textarea name="post" id="post" cols="30" rows="10" placeholder="Apasih Maumu Cok?"></textarea>
+            <br>
+            <input type="submit" name="submit" >
+        </form>
+
+        <form action="action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+
+        </form>
+    </body>
+</html>

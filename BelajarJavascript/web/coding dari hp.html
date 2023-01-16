@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CODING HTML DARI HANDPHONE</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        
+    </head>
+    
+    <body>
+         <div class="main-content">
+         
+
+            <div class="content"> 
+                <div id="overlay" onclick="off()">
+                    <div class="form">
+                        <h1>HTML Form</h1>
+                        <form action="/action_page.php" >
+                            <label for="fname">First Name :</label><br>
+                            <input type="text" id="fname" name="fname" value="Dani Sepriyanto"><br>
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Web Developer"><br><br>
+                            <input class="button" type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+                
+                <header>
+                    <center><h1><a href="coding dari hp.html"><i> My Family</i></a></h1></center>
+                </header>
+
+                <center>
+                <nav class="navbar">
+                    <button type="button" onclick="dani()">Dani Sepriyanto</button>
+                    <button type="button" onclick="wenny()">Wenny Asriani</button>
+                    <button type="button" onclick="jihan()">Jihan Nur Faiha</button>
+                    <button type="button" onclick="rizhan()">M. Rizhan Alsyazani</button>
+                </nav>
+                </center>
+               
+                <h1 id="anggota" class="anggota"><i id="judul">Arti Sebuah Keluarga</i></h1>
+                <script>
+                    function wenny(){
+                        document.getElementById("judul").innerHTML="Wenny Asriani"
+                        document.getElementById("keterangan").innerHTML="Wenny Asriani adalah seorang perempuan, anak ke 2 dari 4 bersaudara."
+                        document.getElementById("gambarnya").src="wenny2.jpg"
+
+                    }
+                    function dani(){
+                        document.getElementById("judul").innerHTML="Dani Sepriyanto"
+                        document.getElementById("keterangan").innerHTML="Dani Sepriyanto adalah seorang putra, anak pertama dari 3 orang bersaudara"
+                        document.getElementById("gambarnya").src="dani2.jpg"
+                    }
+                    function jihan(){
+                        document.getElementById("judul").innerHTML="Jihan Nur Faiha"
+                        document.getElementById("keterangan").innerHTML="Jihan Nur faiha adalah seorang putri, anak pertama dari 2 bersaudara"
+                        document.getElementById("gambarnya").src="jihan2.jpg"
+                    }
+                    function rizhan(){
+                        document.getElementById("judul").innerHTML="Muhammad Rizhan Alsyazani"
+                        document.getElementById("keterangan").innerHTML="<strong>Muhammad Rizhan Alsyazani</strong> adalah seorang putra, anak terakhir dari 2 bersaudara"
+                        document.getElementById("gambarnya").src="rizhan2.jpg"
+                    }
+                </script>
+                <center><img id="gambarnya" class="gambarnya" src="dani.jpeg" alt="foto keluarga"></center>
+                <p id="keterangan" class="keterangan" ><strong> Keluarga </strong>bukan hanya sekadar status sejak lahir. Bukan juga cuma tempat berpulang atau persoalan siapa dari mereka yang lebih dekat denganmu. Namun, kehadiran keluarga di tengah kehidupan merupakan sesuatu yang lebih besar dan berharga.
+                    <br>
+                    <br>
+                Seorang pepatah pernah mengatakan, “Darah lebih kental daripada air.” Benar adanya bahwa ikatan darah merupakan sesuatu yang tidak bisa dipisahkan dengan cara apapun.
+                    <br>
+                    <br>
+                Hubungan ini akan semakin erat karena terbentuk dari ikatan emosional antar individu anggota keluarga. Semakin kamu menghargai kehadiran mereka, maka akan semakin dalam pula makna keluarga yang dirasakan.</p>
+                <center><iframe width="1026px" height="590px" src="https://www.youtube.com/embed/ODR459-9YHE" title="Arti Keluarga" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+                <audio src="favorit1.mp3" controls></audio></center>
+
+                <button type="button" onclick="overlay()">Memunculkan Overlay Element</button>
+            </div>
+        </div>
+    </body>
+</html>

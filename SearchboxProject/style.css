@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0,8,51,0.5),rgba(255, 255, 255, 0.5)), url(pantai.jpg) ;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.group form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+}
+
+.group input{
+    font-size: larger;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 400px;
+    height: 50px;
+    border-radius: 25PX;
+}
+::placeholder {
+    text-align: center;
+    padding: 10PX;
+    color: rgba(19, 16, 13, 0.8);
+    
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.group button img {
+    width: 50px;
+    height: 50px;
+    margin: -20px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.h1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    position: relative; top: 100px; 
+    margin-left: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+body {
+    margin: 30px;
+    background: transparent;
+}
+.form {
+    width: 300px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: max-content;
+
+}
+h1 {
+    text-align: center;
+}

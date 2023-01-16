@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/favicon.ico" class="logo">
+        <ul class="nav-ul">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            
+        </ul>
+    </nav>
+    <div class="headtitle">
+        <h1>Javascript Lesson</h1>
+    </div>
+    <div class="lesson">
+    <h1 id="judul">Lesson 1</h1>
+    <h1 id="dani">TEXT INI AKAN BERUBAH JIKA ANDA MENG KLIK TOMBOL DI BAWAH</h1>
+    <button onclick="myfunction()">Silahkan Klik</button>
+    <button onclick="restart()">Reset</button>
+
+    <script>
+        function restart() {
+            document.getElementById('dani').innerHTML="TEXT INI AKAN BERUBAH JIKA ANDA MENG KLIK TOMBOL DI BAWAH"
+            document.getElementById('dani').style.textAlign="left"
+            document.getElementById('dani').style.textShadow="none"
+        }
+        function myfunction(){
+            document.getElementById('dani').innerHTML="Welcome To Javacript Beibeh"
+            document.getElementById('dani').style.textAlign="center"
+            document.getElementById('dani').style.textShadow="2px 2px 5px blue"
+        }
+    </script>
+
+    <p style="text-indent:20px;">
+        Pada contoh diatas kalian bisa mengubah text yang ada pada tag h1 (TEXT INI AKAN BERUBAH JIKA ANDA MENG KLIK TOMBOL DI BAWAH). menjadi Sebuah Text "Welcome To Javacript Beibeh" menggunakan tombol <button onclick="myfunction()">Silahkan Klik</button>. <br><br>
+        Bukan hanya textnya saja namun <span class="strong">CSS</span> dari text tersebut juga berubah, seperti : <br>
+        <ul>
+            <li><span class="strong">Text-Align</span> : dari <span class="strong">"left"</span> menjadi <span class="strong">"center"</span> </li>
+            <li><span class="strong">Text-shadow</span> : dari <span class="strong">"none"</span> menjadi <span class="strong">"2px 2px 5px blue"</span> </li>
+        </ul>
+    </p>
+    <p>Code yang harus dibuat adalah : </p>
+    <img class="code" src="img/lesson1.png" alt="">
+
+    </div>
+    <div class="lesson">
+        <h1 id="judul">Lesson 2</h1>
+        <h2 id="subjudul">Letak Dari Javascript</h2>
+        <p id="Penjabaran">Script pada javascript bisa di letakkan di 3 tempat pada HTML, yaitu :<br>
+        <ol>
+            <li>Head</li>
+            <li>Body, atau</li>
+            <li>Eksternal</li>
+        </ol></p>
+        <h3>Javascript pada head</h3>
+        <p>Peletakan javascript pada head dapat di jelaskan dengan contoh code berikut ini:</p>
+        <img src="img/lesson2.png" alt="" class="code">
+        <h3>Javascript pada body</h3>
+        <p>Peletakan javascript pada body dapat di jelaskan dengan contoh code berikut ini:</p>
+        <img src="img/lesson1.png" alt="" class="code">
+        <h3>Javascript pada pada eksternal file</h3>
+        <p>Peletakan javascript diluar dari file html dapat dilakukan dengan penulisan kode penyambung ke file javascript di dalam elemen head HTML dengan code berikut ini:</p>
+        <img src="img/lesson2c.png" alt="" class="code">
+        <p>dan di bawah adalah contoh penulisan code pada file javascript eksternal :</p>
+        <img src="img/lesson2ca.png" alt="" class="code">
+    </div>
+    <div class="lesson">
+        <h1 id="judul">Lesson 3</h1>
+        <h2 id="subjudul">Javascript output</h2>
+        <p>Javascript bisa menampilkan data dengan berbagai macam cara yaitu:
+            <ul>
+                <li>Menampilkan data ke dalam inner dari tag HTML, menggunakan <span class="attribute">innerHTML.</span></li>
+                <li>Menulis data kedalam dokumen dengan menggunakan <span class="attribute">document.write()</span></li>
+                <li>Menampilkan data kedalam kotak peringatan browser menggunakan <span class="attribute">window.alert()</span></li>
+                <li>Menampilkan data ke dalam console browser, menggunakan <span class="attribute">console.log()</span></li>
+            </ul>
+        </p>
+        <button class="clickme" onclick="windowalert()">
+            Click me
+        </button>
+
+        <script>
+            function windowalert() {
+            window.alert("Ini adalah output javascript pada windows.alert")
+            }
+        </script>
+    </div>
+    <div class="lesson">
+        <h1 id="judul">
+            Lesson 3
+        </h1>
+    </div>
+</body>
+</html>

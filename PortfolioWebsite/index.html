@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css">
+    <script src="https://kit.fontawesome.com/ca8f9ed808.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- style switcher -->
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="styles-witcher.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <div class="aside" id="aside">
+            <label for="check" id="checkbtn2" onclick="closeNav()">
+                <i class="fas fa-xmark"></i>
+            </label>
+            <div class="logo">
+                <a href="#"><span>D</span>ani <span>S</span></a>
+            </div>
+            
+            <ul class="nav">
+                <li><a href="#home" id="home1" onclick="active1()" style="color:var(--skin-color)"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" id="about1" onclick="active2()"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services" id="services1" onclick="active3()"><i class="fa fa-list" ></i>Services</a></li>
+                <li><a href="#portfolio" id="portfolio1" onclick="active4()"><i class="fa fa-briefcase" ></i>Portfolio</a></li>
+                <li><a href="#contact" id="contact1" onclick="active5()"><i class="fa fa-comments" ></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- Aside End -->
+        <!-- Main Content  Start -->
+        <div class="main-content" >
+            <div id="openNav">
+                <input type="checkbox" id="check">
+                <label for="check" id="checkbtn1" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            
+            <!-- Home Section Start -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info ">
+                            <h3 class="hello">
+                                Hello, My Name Is <span class="name">Dani Sepriyanto</span>
+                            </h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Web Designer</span></h3>
+                            <p>I'm a person with extensive experience for over 7 years. My Expertise is to learn new ability and adapting with new environment and many more...</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="PortfolioImages/charles.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+            <!-- About Section Start -->
+            <section class="about section" style="display:none" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Dani Sepriyanto and <span>Web Developer</span></h3>
+                                    <p>I born in Bintan, an island in Indonesia country. I am married and have two children. So excited with goal that i want to achieve that is to be an expert in Web Developing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Birthday : <span>11 September 1995</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Age : <span>27</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Website : <span>www.domain.com</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Email : <span>daniexp95@engineer.com</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Degree : <span>Diploma</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Phone(WA) : <span>+62 859 4316 8073</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                City : <span>Bintan</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>
+                                                Freelance : <span>Available</span>
+                                            </p>
+                                        </div>
+                                    </div>                    
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="#contact" class="btn hire-me"> Hire Me</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15"> 
+                                    <div class="row">
+
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:100%;"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>JAVASCRIPT</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:62.5%;"></div>
+                                                <div class="skill-percent">62.5%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>SQL</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:10%;"></div>
+                                                <div class="skill-percent">10%</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-item padd-15">
+                                            <h5>PHP</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:45%;"></div>
+                                                <div class="skill-percent">45%</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2013-2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        D1 BINTAN TOURISM INSTITUTE
+                                                    </h4>
+                                                    <p class="timeline-text">I desided to study here for over 1 year. My Institute are located in Bintan Island too.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2010-2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        SMA NEGERI 2 TANJUNGPINANG
+                                                    </h4>
+                                                    <p class="timeline-text">I take science in this school.Study for 3 years</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2007-2010
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        SMP Negeri 3 Bintan Timur
+                                                    </h4>
+                                                    <p class="timeline-text"></p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2001-2007
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        SD Negeri 019 Bintan Timur
+                                                    </h4>
+                                                    <p class="timeline-text"></p>
+                                                </div>
+                                                <!-- timeline item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2021-Now
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Facilities and infrastructure Dept <br> <span>De Green Camp Islamic School</span>
+                                                    </h4>
+                                                    <p class="timeline-text">I work here from July 2021 until now.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2020
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        OFFICE-BOY <br> <span>SPBU Batu Hitam Tanjungpinang</span>
+                                                    </h4>
+                                                    <p class="timeline-text"></p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018-2020
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        DRIVER & HOUSEKEEPER <br> <span>Comforta Hotel Tanjungpinang</span>
+                                                    </h4>
+                                                    <p class="timeline-text">I drive 7 and 16 seats vehicle. And move to Housekeeping Dept as a Public Area Attendant in my lasst year. Stop because COVID-19 outbreak.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        ONLINE TAXI DRIVER, <br> <span>Uber, Go-Car, Grab-Car</span>
+                                                    </h4>
+                                                    <p class="timeline-text">Move to Jakarta to get some sailor certificate but i dont pass the test, so i decided to applywork as an online taxi driver. So fun !, get a new exciting experience for the first time.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2016
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        DRIVER & WAITER, <br> <span>Bintan Spavilla Resort</span>
+                                                    </h4>
+                                                    <p class="timeline-text">This is my second professional work. I drive 7 and 16 seats vehicle.</p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        BELL DRIVER, <br> <span>Bintan Nirwana Hotel</span>
+                                                    </h4>
+                                                    <p class="timeline-text">This is my first job.</p>
+                                                </div>
+                                                <!-- timeline item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section End -->
+            <!-- Services Section Start -->
+            <section class="service section" style="display:none" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn "></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora illo quas delectus iste, ipsum quam voluptates itaque facilis facere, illum dolorem nulla vel obcaecati fugit velit consectetur odit incidunt temporibus.</p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section end -->
+            <!-- Portfolio Section Start -->
+            <section class="portfolio section" style="display:none" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Project :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- portfolio item Start -->
+                        <div class="portfolio-item padd-15">
+                            <a href="PortfolioImages/Searchbox.png" data-lightbox="cars" data-title="Caption1">              
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/Searchbox.png" alt="">
+                                    </div>
+                                </div>                         
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <a href="PortfolioImages/ferrari.png" data-lightbox="cars" data-title="Caption1">             
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/ferrari.png" alt="">
+                                    </div>
+                                </div>                        
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <a href="PortfolioImages/dbx2022.png" data-lightbox="cars" data-title="Caption1">  
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/dbx2022.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <a href="PortfolioImages/imggallery.png" data-lightbox="cars" data-title="Caption1">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/imggallery.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <a href="PortfolioImages/loginbox.png" data-lightbox="cars" data-title="Caption1">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/loginbox.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <a  href="PortfolioImages/Monthlyvi.png" data-lightbox="cars" data-title="Caption1">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="PortfolioImages/Monthlyvi.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- portfolio item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio Section End -->
+            <!-- Contact Section Start -->
+            <section class="contact section" style="display:none" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">
+                        Have You Any Question ?
+                    </h3>
+                    <h4 class="contact-sub-title padd-15">
+                        I'M AT YOUR SERVICES
+                    </h4>
+                    <div class="row">
+                        <!-- contact info item Start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+62 859 4316 8073</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Bintan, Kepulauan Riau</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>daniexp95@engineer.com</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-asia"></i></div>
+                            <h4>Website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+
+                        <!-- contact info item End -->
+                    </div>
+                    <h3 class="contact-title padd-15">
+                        SEND ME AN EMAIL
+                    </h3>
+                    <h4 class="contact-sub-title padd-15">
+                        I'M VERY RESPONSIVE
+                    </h4>
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+        </div>
+        <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
+    
+
+    <!-- JS Files -->
+    <script>
+
+        let home= document.getElementById('home1');
+        let about= document.getElementById('about1');
+        let services= document.getElementById('services1');
+        let portfolio= document.getElementById('portfolio1');
+        let contact= document.getElementById('contact1');
+        let home1= document.getElementById('home');
+        let about1= document.getElementById('about');
+        let services1= document.getElementById('services');
+        let portfolio1= document.getElementById('portfolio');
+        let contact1= document.getElementById('contact');
+
+        function active1() {
+            home.style.color="var(--skin-color)"
+            about.style.color="var(--text-black-900)"
+            services.style.color="var(--text-black-900)"
+            portfolio.style.color="var(--text-black-900)"
+            contact.style.color="var(--text-black-900)"
+            home1.style.display="block"
+            home1.style.alignItems="center"
+            about1.style.display="none"
+            services1.style.display="none"
+            portfolio1.style.display="none"
+            contact1.style.display="none"
+        }
+        function active2() {
+            home.style.color="var(--text-black-900)"
+            about.style.color="var(--skin-color)"
+            services.style.color="var(--text-black-900)"
+            portfolio.style.color="var(--text-black-900)"
+            contact.style.color="var(--text-black-900)"
+            home1.style.display="none"
+            about1.style.display="block"
+            services1.style.display="none"
+            portfolio1.style.display="none"
+            contact1.style.display="none"
+        }
+        function active3() {
+            home.style.color="var(--text-black-900)"
+            about.style.color="var(--text-black-900)"
+            services.style.color="var(--skin-color)"
+            portfolio.style.color="var(--text-black-900)"
+            contact.style.color="var(--text-black-900)"
+            home1.style.display="none"
+            about1.style.display="none"
+            services1.style.display="block"
+            portfolio1.style.display="none"
+            contact1.style.display="none"
+        }
+        function active4() {
+            home.style.color="var(--text-black-900)"
+            about.style.color="var(--text-black-900)"
+            services.style.color="var(--text-black-900)"
+            portfolio.style.color="var(--skin-color)"
+            contact.style.color="var(--text-black-900)"
+            home1.style.display="none"
+            about1.style.display="none"
+            services1.style.display="none"
+            portfolio1.style.display="block"
+            contact1.style.display="none"
+        }
+        function active5() {
+            home.style.color="var(--text-black-900)"
+            about.style.color="var(--text-black-900)"
+            services.style.color="var(--text-black-900)"
+            portfolio.style.color="var(--text-black-900)"
+            contact.style.color="var(--skin-color)"
+            home1.style.display="none"
+            about1.style.display="none"
+            services1.style.display="none"
+            portfolio1.style.display="none"
+            contact1.style.display="block"
+        }
+
+        function openNav(){
+            document.getElementById('aside').style.left="0";
+            document.getElementById('checkbtn2').style.display="block";
+            document.getElementById('checkbtn1').style.display="none";
+            
+        }
+
+        function closeNav() {
+            document.getElementById('aside').style.left="-100%";
+            document.getElementById('checkbtn2').style.display="none";
+            document.getElementById('checkbtn1').style.display="block";
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="style-switcher.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

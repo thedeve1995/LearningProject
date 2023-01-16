@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop id="myVideo" >
+            <source src="Rolex Cosmograph Daytona - Jam Tangan yang terlahir untuk balapan.mp4" type="video/mp4">
+        </video>
+    
+        <div class="content">
+            <div class="text">
+                <h1>Rolex Daytona</h1>
+                <p>Terlahir Untuk Balapan</p>
+                <button id="btn" onclick="myFunction()">Pause</button>
+            </div> 
+        </div>
+    </div>
+    <div class="content1">
+        <div class="text1">
+            <h1>Rolex Daytona</h1>
+            <p>Terlahir Untuk Balapan</p>
+            <button id="btn">Pause</button>
+        </div> 
+    </div>
+    
+    
+    <script>
+        var video= document.getElementById('myVideo');
+        var btn= document.getElementById('btn');
+
+        function myFunction() {
+            if(video.paused) {
+                video.play();
+                btn.innerHTML="Pause";
+            } else {
+                video.pause();
+                btn.innerHTML= "Play";
+            }
+        }
+    </script>
+</body>
+</html>

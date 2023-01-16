@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: overline;
+    font-family: courier new, monospace;
+    letter-spacing: 5px;
+}
+p {
+    text-align: justify;
+    font-size: 35px;
+}
+i {
+    color: rgb(4, 49, 250);
+}
+body {
+    font-size: 35px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JS</title>
+    <style>
+        h1 {
+            text-align: center;
+            cursor: pointer;
+        }
+        body{
+            background-color: rgb(58, 51, 51);
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+        }
+        .video {
+            display: flex;
+            justify-content: center;
+        }
+        .img img {
+            width: 50%;
+            border-radius: 20px;
+            height: 25%;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        .button button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+
+    
+    <h1 id="dani" onclick="myFuntion()">Dani Sepriyanto</h1>
+    
+
+    <script>
+        function myFuntion() {
+            document.getElementById('dani').innerHTML="Dani Sepriyanto Ganteng"
+        }
+    </script>
+
+    <div class="img">
+        <img src="download.png" id="car" ><br>
+    </div>
+    <div class="button">
+        <button type="button" onclick="gantimobil(1)">Tesla</button>
+        <button type="button" onclick="gantimobil(2)">ferarri</button>
+        <button type="button" onclick="gantimobil(3)">Lamborghini</button>
+    </div>    
+
+    <script>
+        function gantimobil(n){
+        var gambar;
+            if (n == 1){
+            gambar = "tesla.jpg"
+        }
+        else if (n == 2) {
+            gambar = "ferrari.jpg"
+        }
+        else {
+            gambar = "lambo.jpg"
+        }
+        document.getElementById('car').src= gambar;
+        }
+        
+    </script>
+
+<div class="video">
+    <video id="cewe" height="400" width="230" controls>
+        <source  src="video7.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="button">
+    <button type="button" onclick="cewe(1)">Fira</button>
+    <button type="button" onclick="cewe(2)">Notnot</button>
+    <button type="button" onclick="cewe(3)">Not Lagi</button>
+</div>    
+
+<script>
+    function cewe(n){
+    var video;
+        if (n == 1){
+        video = "video1.mp4"
+    }
+    else if (n == 2) {
+        video = "video3.mp4"
+    }
+    else {
+        video = "video6.mp4"
+    }
+    document.getElementById('cewe').src=video;
+    }
+    
+</script>
+</body>
+</html>

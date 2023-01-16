@@ -1,0 +1,117 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+#myVideo {
+    width: 110%;
+    height: 100vh;
+    transform: translateX(50%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 80px;
+}
+.content1 h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.content p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.content1 p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    width: 110vw;
+    
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.295);
+    z-index: 2;   
+    display: grid;
+    align-items: center;
+    width: 110vw;
+    height: 100vh;
+    transform: translateX(-50%);
+}
+.content1 {
+    background-color: rgba(255, 255, 255, 0.295);
+    z-index: 2;   
+    display: grid;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.text button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+    padding:10px 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+.text1 button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+    padding:10px 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:400px) {
+    .text button {
+        font-size: 15px;
+    }
+
+    .content {
+        width: 100%;
+        position: absolute;
+        left:0;
+        height: 70vh;
+        align-items: baseline;
+        
+    }
+    .text p {
+        font-size: 12px;
+    }
+    .text h1 {
+        font-size: 24px;
+    }
+
+    #myVideo {
+        position: static;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Layouting
+        </title>
+        <link rel="icon" href="New folder/favicon.ico">
+        <Meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Ini adalah style untuk Header */
+            header {
+                background-color: bisque;
+                padding: 35px;
+                text-align: center;
+                font-size: 40px;
+                color: chocolate;
+            }
+
+            /* ini adalah style layouting */
+            nav {
+                float: left;
+                width: 25%;
+                height:400px;
+                background: cornflowerblue;
+                padding: 40px;
+                
+            }
+
+            /* ini style untuk list dalam Nav */
+            nav ul {
+                list-style-type: lower-alpha;
+                padding: 10px;
+            }
+            nav ul li {
+                margin-top: 15px;
+            }
+
+            article {
+                float: left;
+                padding: 30px;
+                width: 75%;
+                background-color: aquamarine;
+                height: 100%;
+            }
+
+            /* ini cra menghapus float setelah pembagian collums */
+
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /*ini adalah style untuk footer*/
+
+            footer {
+                background-color: bisque;
+                padding: 10px;
+                text-align: center;
+                color: black;
+            }
+
+            /*ini adalah cara membuat responsive layout, supaya kolom dan box mberurutan dari atas kebawah saat layar di kecilkan */
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            article p {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Biodata Keluarga Dani Sepriyanto</h2>
+        </header>
+        
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Dani S</a></li>
+                    <li><a href="#">Wenny A</a></li>
+                    <li><a href="#">Jihan N.F</a></li>
+                    <li><a href="#">M.Rizhan A</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Dani Sepriyanto</h1>
+                <p>Dani Sepriyanto adalah Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur voluptatem distinctio possimus aperiam animi labore doloribus ducimus deserunt doloremque ipsa non impedit, soluta saepe cupiditate quaerat dolor at voluptatum magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt quibusdam in, voluptate nostrum dolore odio a ab exercitationem veniam accusantium nihil dolorum minus! Nihil molestias aut debitis quam vitae!
+                </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos eveniet saepe blanditiis iste at accusamus, impedit placeat possimus, voluptas est necessitatibus quidem repudiandae corrupti nihil aliquam reprehenderit iusto quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minus saepe possimus odio exercitationem quasi reprehenderit pariatur magnam iste, ad placeat consequuntur eos porro minima earum dolorum quisquam ex atque?</p>
+            </article>
+        </section>
+
+
+        <footer>
+            <p>Terima Kasih</p>
+        </footer>
+    </body>
+</html>

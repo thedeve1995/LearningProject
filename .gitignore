@@ -1,0 +1,10 @@
+# ignore folder log
+FolderHTML/
+
+# ignore file extension .jpg
+*.jpg
+*.jpeg
+
+#ignore file3.txt
+file3.txt
+
